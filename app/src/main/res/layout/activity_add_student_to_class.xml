@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudentToClassActivity">
+
+    <TextView
+        android:id="@+id/student_tv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="Sinh viên"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/list_student_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="44dp"
+        android:layout_toRightOf="@+id/student_tv" />
+
+    <TextView
+        android:id="@+id/class_tv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="119dp"
+        android:text="Lớp học"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/list_class_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="118dp"
+        android:layout_toRightOf="@+id/student_tv" />
+
+    <Button
+        android:id="@+id/add_student_to_class_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="187dp"
+        android:text="Thêm sinh viên vào lớp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_student_in_class"
+        android:layout_below="@id/add_student_to_class_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

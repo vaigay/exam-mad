@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudentActivity">
+
+    <TextView
+        android:id="@+id/student_name_tv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="Tên sinh viên"
+        android:textSize="20dp"></TextView>
+
+    <EditText
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/student_name_tv"></EditText>
+
+    <TextView
+        android:id="@+id/student_birth_year_tv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/student_name_tv"
+
+        android:layout_marginTop="14dp"
+        android:text="Năm sinh"
+        android:textSize="20dp"></TextView>
+
+    <EditText
+        android:id="@+id/student_birth_year"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/student_name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/student_name_tv"
+        android:inputType="number"></EditText>
+
+    <TextView
+        android:id="@+id/student_home_town_tv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/student_birth_year_tv"
+
+        android:layout_marginTop="22dp"
+        android:text="Quê quán"
+        android:textSize="20dp"></TextView>
+
+    <EditText
+        android:id="@+id/student_home_town"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/student_birth_year"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/student_name_tv"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/student_grade_tv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/student_home_town_tv"
+
+        android:layout_marginTop="26dp"
+        android:text="Năm học"
+        android:textSize="20dp"></TextView>
+
+    <Spinner
+        android:id="@+id/student_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_home_town"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/student_grade_tv" />
+
+    <Button
+        android:id="@+id/add_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_grade_tv"
+        android:layout_marginTop="10dp"
+        android:text="Thêm sinh viên"></Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_student"
+        android:layout_below="@id/add_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

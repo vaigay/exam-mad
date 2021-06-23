@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinh Viên"></Button>
+
+        <Button
+            android:id="@+id/classRom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lớp học"></Button>
+
+        <Button
+            android:id="@+id/student_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="đăng ký"></Button>
+
+        <Button
+            android:id="@+id/report1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê 1"></Button>
+
+        <Button
+            android:id="@+id/report2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê 2"></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
